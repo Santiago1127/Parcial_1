@@ -1,0 +1,9 @@
+<div *ngIf="arregloDescripcionNombre.length > 0" >
+    <ul>
+        <li *ngFor="let DescripcionNombre of arregloDescripcionNombre, let i = index" >
+            {{DescripcionNombre}}
+            <button (click)="borrarDescripcionFn(i)">Borrar registro</button>
+            <p></p>
+        </li>
+    </ul>
+    </div>

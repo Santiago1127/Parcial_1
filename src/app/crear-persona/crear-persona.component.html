@@ -1,0 +1,32 @@
+<h1>Defina competencia</h1>
+<p>Nombre:</p>
+<input type="text" [(ngModel)]="nombre">
+<button (click)="agregarCompetencia()">Agregar </button>
+
+<app-lista-personas [arregloCompetenciasNombre]="competenciasNombre"  (borrarPersona)="borrarNombre($event)"></app-lista-personas>
+
+<p>Descripcion:</p>
+<input type="text" [(ngModel)]="nombreDes">
+<button (click)="agregarDescripcion()">Agregar </button>
+
+<app-descripcion [arregloDescripcionNombre]="descripcionNombre" (borrarDescripcion)="borrarNombreDescripcion($event)" ></app-descripcion>
+
+<p>Identificador:</p>
+<input type="text" [(ngModel)]="nombreIde">
+<button (click)="agregarIdentificador()">Agregar </button>
+
+<app-identificador [arregloIdentificadorNombre]="identificadorNombre" (borrarIdentificador)="borrarNombreIdentificador($event)"></app-identificador>
+
+<h1>Defina comportamiento</h1>
+
+<p>Descripcion:</p>
+<input type="text" [(ngModel)]="nombreDesComp">
+<button (click)="agregarDescripcionComp()">Agregar </button>
+
+<app-descripcion-comp [arregloDescripcionCompNombre]="descripcionCompNombre" (borrarDescripcionComp)="borrarNombreDescripcionComp($event)"></app-descripcion-comp>
+
+<p>Porcentaje:</p>
+<input type="text" [(ngModel)]="nombrePorComp">
+<button (click)="agregarPorcentajeComp()">Agregar </button>
+
+<app-porcentaje-comp [arregloPorcentajeCompNombre]="porcentajeCompNombre" (borrarPorcentajeComp)="borrarNombrePorcentajeComp($event)"></app-porcentaje-comp>

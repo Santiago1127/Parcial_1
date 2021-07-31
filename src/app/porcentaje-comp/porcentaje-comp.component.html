@@ -1,0 +1,9 @@
+<div *ngIf="arregloPorcentajeCompNombre.length > 0" >
+    <ul>
+        <li *ngFor="let PorcentajeCompNombre of arregloPorcentajeCompNombre, let i = index" >
+            {{PorcentajeCompNombre}}
+            <button (click)="borrarPorcentajeCompFn(i)">Borrar registro</button>
+            <p></p>
+        </li>
+    </ul>
+    </div>

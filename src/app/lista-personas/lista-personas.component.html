@@ -1,0 +1,9 @@
+<div *ngIf="arregloCompetenciasNombre.length > 0" >
+    <ul>
+        <li *ngFor="let CompetenciaNombre of arregloCompetenciasNombre, let i = index" >
+            {{CompetenciaNombre}}
+            <button (click)="borrarPersonaFn(i)">Borrar registro</button>
+            <p></p>
+        </li>
+    </ul>
+    </div>
